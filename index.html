@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      gap: 8px
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    button {
+      min-width: 70px;
+      width: min-content;
+    }
+
+    .min {
+      width: min-content;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="col">
+    <input type="text" value="Readonly" readonly>
+    <div class="row">
+      <button href="#">7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>/</button>
+    </div>
+    <div class="row">
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>x</button>
+    </div>
+    <div class="row">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>-</button>
+    </div>
+    <div class="row">
+      <button class="min">0</button>
+      <button class="full">=</button>
+      <button class="min">+</button>
+    </div>
+  </div>
+
+  <min id="app"></min>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
